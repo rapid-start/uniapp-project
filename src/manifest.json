@@ -8,7 +8,12 @@
     "mp-weixin": {
         "appid": "wx5eead4fcbf03f9e3",
         "setting": {
-            "urlCheck": false
+            "urlCheck": false,
+            "es6": false,
+            "minified": false
+        },
+        "optimization": {
+            "subPackages": true
         },
         "usingComponents": true,
         "lazyCodeLoading": "requiredComponents",
@@ -19,10 +24,13 @@
         },
         "requiredPrivateInfos": [
             "getLocation"
-        ],
-        "slotMultipleInstance": true
+        ]
     },
     "mp-alipay": {
+        "usingComponents": true,
+        "styleIsolation": "shared"
+    },
+    "mp-toutiao": {
         "usingComponents": true
     },
     "h5": {
